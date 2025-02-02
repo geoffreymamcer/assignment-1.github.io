@@ -1,0 +1,292 @@
+/*Sample css code for font
+.kdam-thmor-pro-regular {
+  font-family: "Kdam Thmor Pro", serif;
+  font-weight: 400;
+  font-style: normal;
+}*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+footer {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+.main-banner-section {
+  background-image: url("assets/animated-coffee-background-gif.gif");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main-banner-title-text {
+  font-size: 8.5vw;
+  font-family: "Kdam Thmor Pro", serif;
+  font-weight: bolder;
+  color: #cfbeb2;
+  text-shadow: -1px -1px 0 #331e0e, 1px -1px 0 #331e0e, -1px 1px 0 #331e0e,
+    1px 1px 0 #331e0e;
+}
+
+.main-banner-subtitle-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: #331e0e;
+  text-shadow: -1px -1px 0 #cfbeb2, 1px -1px 0 #cfbeb2, -1px 1px 0 #cfbeb2,
+    1px 1px 0 #cfbeb2;
+  font-size: 3.5vw;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #a69181;
+  color: #4f3623;
+  overflow: hidden;
+}
+
+.nav-bar-items {
+  display: flex;
+  list-style-type: none;
+  font-family: "Kdam Thmor Pro", serif;
+  font-weight: bold;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #7a5f4b;
+  width: 100%;
+}
+
+.name-text {
+  font-family: "Kdam Thmor Pro", serif;
+  color: #331e0e;
+}
+
+.desciption-text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #331e0e;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.skills-section {
+  background-color: #4f3623;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 30vh;
+  padding-bottom: 20px;
+}
+
+.skills-text {
+  color: #cfbeb2;
+  font-family: "Kdam Thmor Pro", serif;
+}
+
+.skills-description {
+  color: #cfbeb2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bootstrap-logo,
+.firebase-logo,
+.mern-stack-logo {
+  height: 11vh;
+  width: auto;
+  max-width: 100%;
+}
+
+.footer-socials-links-section {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  background-color: #a69181;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icons {
+  width: 50px;
+}
+
+li:hover {
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #ffcc00, 0 0 40px #ffcc00;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease;
+}
+
+@media screen and (max-width: 480px) {
+  .main-banner-section {
+    height: 60vw;
+  }
+
+  .nav-bar {
+    height: 7vh;
+    font-size: 1em;
+  }
+
+  .nav-bar-items {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .about-me-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3vh;
+    margin-left: 20vw;
+  }
+  .about-me-section {
+    align-items: center;
+    height: 30vh;
+  }
+  .cat-gif {
+    height: 20vh;
+    overflow: hidden;
+  }
+
+  .name-text {
+    font-size: 5vw;
+  }
+
+  .skills-text-container {
+    margin-top: 5vh;
+    margin-left: 12vw;
+  }
+
+  .bootstrap-logo,
+  .firebase-logo,
+  .mern-stack-logo {
+    height: 11vh;
+    width: auto;
+  }
+
+  .skills-section {
+    min-height: 30vh;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .main-banner-section {
+    height: 60vw;
+  }
+
+  .nav-bar-items {
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+  }
+
+  .sub-banner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-me-section,
+  .skills-section {
+    width: 50%;
+  }
+
+  .about-me-text-container,
+  .skills-text-container {
+    margin-left: 6%;
+    margin-top: 6%;
+  }
+
+  .logo {
+    width: 20vw;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .main-banner-section {
+    height: 30vw;
+  }
+
+  .nav-bar-items {
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+  }
+
+  .sub-banner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-me-section {
+    width: 40%;
+  }
+  .skills-section {
+    width: 60%;
+  }
+
+  .name-text {
+    font-size: 2em;
+  }
+
+  .desciption-text {
+    font-size: 1.5em;
+  }
+
+  .about-me-text-container {
+    margin-left: 2vw;
+    margin-top: 2vh;
+  }
+
+  .skills-text-container {
+    margin-left: 2vw;
+    margin-top: 2vh;
+  }
+
+  .skills-text {
+    font-size: 2em;
+  }
+
+  .skills-description {
+    font-size: 1.5em;
+  }
+
+  .logo {
+    width: 20vw;
+    height: auto;
+  }
+}
